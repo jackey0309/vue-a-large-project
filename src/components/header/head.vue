@@ -15,9 +15,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-     @import '../../style/mixin';
-    
+<style lang="scss" scoped> 
    #head_top{
     background-color: #3190e8;
     position: fixed;

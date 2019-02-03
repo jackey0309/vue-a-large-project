@@ -15,6 +15,87 @@
                 </svg>
             </a>
         </nav> 
+        <section id="hot_city_container">
+            <h4 class="city_title">热门城市</h4>
+            <ul class="citylistul clear">
+                <li>上海</li>
+                <li>哈尔滨</li>
+                <li>南京</li>
+                <li>广州</li>
+                <li>厦门</li>
+                <li>杭州</li>
+                <li>天津</li>
+                <li>青岛</li>        
+            </ul>
+        </section>
+        <section class="group_city_container">
+            <ul class=letter_classify>
+                <li class="letter_classify_li">
+                    <h4 class="city_title">
+                        A
+                        <span>（按字母排序）</span>
+                    </h4>
+                    <ul class="groupcity_name_container citylistul clear">
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆安庆安庆安庆安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                    </ul>
+                </li>
+                 <li class="letter_classify_li">
+                    <h4 class="city_title">
+                        B
+                        <span>（按字母排序）</span>
+                    </h4>
+                    <ul class="groupcity_name_container citylistul clear">
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                    </ul>
+                </li>
+                 <li class="letter_classify_li">
+                    <h4 class="city_title">
+                        C
+                        <span>（按字母排序）</span>
+                    </h4>
+                    <ul class="groupcity_name_container citylistul clear">
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                    </ul>
+                </li>
+                 <li class="letter_classify_li">
+                    <h4 class="city_title">
+                        D
+                        <span>（按字母排序）</span>
+                    </h4>
+                    <ul class="groupcity_name_container citylistul clear">
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                        <li href="#" class="ellipsis">安庆</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
     </div>
 </template>
 
@@ -31,6 +112,7 @@ export default {
     
 
 <style lang="scss" scoped>
+    @import '../../style/mixin';
     .city_nav{
         padding-top: 2.35rem;
         border-top: 1px solid #e4e4e4;
@@ -72,6 +154,43 @@ export default {
                     }
         }   
     }
-       
+    #hot_city_container{
+        background-color: #fff;
+        margin-bottom: 0.4rem;
+    }
+    .city_title{
+        color: #666;
+        font-weight: 400;
+        text-indent: 0.45rem;
+        border-top: 2px solid $bc;
+        border-bottom: 1px solid $bc;
+        @include font(0.55rem, 1.45rem, "Helvetica Neue");
+        span{
+            @include sc(0.475rem,#999);
+        }
+    }
+    .citylistul{
+        li{
+            float: left;
+            text-align: center;
+            color: $blue;
+            border-bottom: 0.025rem solid $bc;
+            border-right: 0.025rem solid $bc;
+            @include wh(25%,1.75rem);
+            @include font(0.6rem, 1.75rem);
+        }
+        li:nth-of-type(4n){
+            border-right: none;
+        }
+    }
+    .letter_classify_li{
+        margin-bottom: .4rem;
+        background-color: #fff;
+        border-bottom: 1px solid $bc;
+        .groupcity_name_container li {
+            color: #666;
+        }
+    } 
+    
 </style>
 
