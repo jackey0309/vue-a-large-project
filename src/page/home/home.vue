@@ -8,12 +8,12 @@
                 <span>当前定位城市：</span>
                 <span>定位不准时，请在城市列表中选择</span>
             </div>
-            <a href="#" class="guess_city">
+            <router-link to="/city" class="guess_city">
                 <span>武汉</span> 
                 <svg class="arrow_right">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
                 </svg>
-            </a>
+            </router-link>
         </nav> 
         <section id="hot_city_container">
             <h4 class="city_title">热门城市</h4>
