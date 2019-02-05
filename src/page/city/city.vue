@@ -76,7 +76,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import 'src/style/mixin';
+    @import '../../style/mixin';
     .city_container{
         padding-top: 2.35rem;
     }
